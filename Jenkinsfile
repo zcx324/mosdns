@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('') {
       steps {
-        echo 'dwada'
+        sh 'docker build -t mosdns:v1 .'
       }
     }
 
