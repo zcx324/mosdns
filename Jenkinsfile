@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('') {
       steps {
-        sh 'docker build -t mosdns:v1 .'
+        sh 'sh "docker build -t mosdns:v1 ."'
       }
     }
 
