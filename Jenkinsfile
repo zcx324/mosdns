@@ -1,12 +1,12 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'Dockerfile'
+    node {
+      label 'jenkins-node1'
     }
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'sh "docker build -t mosdns:v1 ."'
       }
